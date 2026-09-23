@@ -1,0 +1,59 @@
+:root{
+    --navbar: #071426;
+    --background: #F5F7FB;
+    --card: #FFFFFF;
+
+    --primary: #2563EB;
+
+    --text: #1F2937;
+    --text-secondary: #6B7280;
+    --text-white: #6B7280;
+
+    --border: #E5E7EB;
+}
+
+#header{
+    height: 10vh;
+    /* background-color: var(--navbar); */
+}
+
+#main{
+    background: gray;
+    flex: 1;
+}
+
+#footer{
+    background-color: #2563EB;
+    min-height: 10vh;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+} 
+
+nav{
+    background-color: var(--navbar);
+    color: var(--card);
+}
+
+.btnNav{
+    color: white;
+}
+
+.txtWhite{
+    color: var(--background);
+}
+.txtBlue{
+    color: var(--primary);
+}
+
+
+.card{
+    background-color: var(--card);
+    border: 1px solid var(--border);
+}
+
+.btn-primary{
+    background-color: var(--primary);
+}
