@@ -13,53 +13,306 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
+
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- Link CSS  -->
+        
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <div class="d-flex flex-column min-vh-100 body">
             <header id="header">
-            <!-- Main txt  -->
-            <nav class="navbar navbar-expand-lg d-flex justify-content-end">
-                <!-- Button collapseMenu  -->
-                <button type="button" class="btn navbar-toggler d-lg-none" data-bs-target="#collapseMenu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
-                <!-- Main Text  -->
-                <div class="nav-item mx-auto"> 
-                    <p class="display-6 fw-bold"><i class="bi bi-globe-americas"></i> Travel <span class="txtBlue">Explorer</span></p>
-                </div>
-                
-                <div class="btn-group bg-danger">
-                    <button class="btn btnNav"><i class="bi bi-moon-fill"></i></button>
-                    <button class="btn btnNav"><i class="bi bi-brightness-high-fill"></i></button>
-                </div>
-                <div id="collapseMenu" class="collapse navbar-collapse"> <!-- Open collapse menu  -->
-                    <div class="d-flex w-100 justify-content-end">
-                    <!-- Button Group  -->
-                    <div class="nav-item mx-auto">
-                        <div class="btn-group">
-                            <button class="btn btnNav">Home</button>
-                            <button class="btn btnNav">Destinations</button>
-                            <button class="btn btnNav">Travel Planner</button>
-                            <button class="btn btnNav">About Us</button>
-                            <button class="btn btnNav">Contact</button>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="d-flex w-100">
+                        <div class="d-flex w-100 justify-content-between align-items-center"> 
+                            <!-- Btn for collapse  -->
+                            <button class="btn nav-item d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseMenu"><span class="navbar-toggler-icon"></span></button>
+
+                            <!-- Txt Intro  -->
+                            <p class="h4 nav-item"><i class="bi bi-globe-americas"></i> Travel <span class="txtBlue">Explorer</span></p>
+
+                            <!-- Moon and Sun for Dark Mode and Light mode  -->
+                            <div class="">
+                            <button class="btn btnNav"><i class="bi bi-moon-fill"></i></button>
+                            <button class="btn btnNav"><i class="bi bi-sun-fill"></i></button>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Modes and more  -->
-                    <div class="nav-item">
-                        <button class="btn btnNav"><i class="bi bi-search"></i></button>
-                    </div>
-                    </div>
-                </div> <!-- Close collapse  -->
-                
-            </nav>
+
+                    <!-- Collapse menu -->
+                        <div id="collapseMenu" class="collapse navbar-collapse w-100 justify-content-end">
+                            <div class="d-flex">
+                                <div clas="btn-group nav-item">
+                                    <button class="btn btnNav">Home</button>
+                                    <button class="btn btnNav">Destinations</button>
+                                    <button class="btn btnNav">Travel Planner</button>
+                                    <button class="btn btnNav">About Us</button>
+                                    <button class="btn btnNav">Contact</button>
+                                </div>
+
+                                <button class="btn btnNav"><i class="bi bi-search"></i></button>
+
+                            </div>
+                        </div>
+                </nav>
             </header>
+
             <main id="main">
-            1
+                <!-- Making Banner  -->
+                <div id="banner" class="bg-primary">
+                    <img src="images/banner3.jpeg" rel="banner">
+                    <div class="txtAndInput">
+                        <p class="display-3 ps-4 fw-bold">Explore <br>The <span class="txtBlue">World!</span></p>
+
+
+                        <div class="d-flex g-0 px-3 row row-cols-1 row-cols-md-4">
+                            <div class="col">
+                                <input class="input form-control" type="text" placeholder="Search a destination...">
+                            </div>
+                            <div class="col">
+                                <input class="input form-control" type="text" placeholder="Any Budget?">
+                            </div>
+                            <div class="col">
+                                <input class="input form-control" type="text" placeholder="Any Season?">
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary w-100"><i class="bi bi-search"></i></button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adding popular categories and Top destinations -->
+                <div class="row row-cols-1 row-cols-md-2">
+                    <!-- Popular Categories  -->
+                    <div class="col ps-4">
+                    <p class="display-5 txtCardBlack text-center">Popular Categories</p>
+                        <!-- First Level  -->
+                        <div class="row">
+                            <!-- Adventure  -->
+                            <div class="col">
+                                <div class="card d-flex p-3 justify-content-end">
+                                    <img
+                                    rel="adventure"
+                                    src="images/adventure.avif"
+                                    class="d-none d-md-block imgCard">
+                                    <span class="badge bg-primary mb-2 d-md-none">Adventure</span>
+
+                                    <div class="txtCard txtWhite ps-2">
+                                        <i class=" bi bi-tree-fill d-none d-md-block txtBlue"></i>
+                                        <p class="h3 d-none d-md-block">Adventure</p>
+                                        <p class="d-none d-md-block">Explore thrilling<br>experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Beach  -->
+                            <div class="col">
+                                <div class="card d-flex p-3 justify-content-end">
+                                    <img
+                                    rel="beach"
+                                    src="images/beach.avif"
+                                    class="d-none d-md-block imgCard">
+                                    <span class="badge bg-warning mb-2 d-md-none">Beach</span>
+
+                                    <div class="txtCard txtWhite ps-2">
+                                        <i class="bi bi-backpack2-fill d-none d-md-block txtBlue"></i>
+                                        <p class="h3 d-none d-md-block">Beach</p>
+                                        <p class="d-none d-md-block">Relax on beautiful<br>beaches</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mountains  -->
+                            <div class="col">
+                                <div class="card d-flex p-3 justify-content-end">
+                                    <img
+                                    rel="mountain"
+                                    src="images/mountain.jpg"
+                                    class="d-none d-md-block imgCard">
+                                    <span class="badge bg-success mb-2 d-md-none">Mountains</span>
+
+                                    <div class="txtCard txtWhite ps-2">
+                                        <i class="bi bi-wifi-off d-none d-md-block txtBlue"></i>
+                                        <p class="h3 d-none d-md-block">Mountains</p>
+                                        <p class="d-none d-md-block">Discover new<br>landscapes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Level  -->
+                        <div class="row row-cols-1 row-cols-md-2 px-2 travelCard mb-1">
+                                <!-- Col1  -->
+                                <div class="col">
+                                    <!-- Div for photo and text  -->
+                                    <div class="d-flex divFjordImg">
+                                        <div>
+                                        <img
+                                        rel="norway"
+                                        src="images/norwayfjords.webp"
+                                        class="imgCard py-3 imgFjord">
+                                        <p class="badge txtCard txtFjord"><i class="bi bi-star-fill txtBlue"> 4.9 Excellent</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Col2  -->
+                                <div class="col">
+                                    <!-- Div for info  -->
+                                    <div class="txtCardBlack">
+                                        <p class="display-6">Norway Fjords</p>
+                                        <p class="text-primary">Norway</p>
+                                        <p>Discover Norway's majestic fjords and experience breathtaking landscapes shaped by nature.</p>
+                                        <div class="d-flex gap-4">
+                                            <div>
+                                                <p class="txtSecondary"><i class="bi bi-thermometer-sun"></i> Best Season</p>
+                                                <p>May - September</p>
+                                            </div>
+                                            <div>
+                                                <p class="txtSecondary"><i class="bi bi-currency-dollar"></i></i> Budget</p>
+                                                <p>$$$$</p>
+                                            </div>
+                                            <div>
+                                                <p class="txtSecondary"><i class="bi bi-stopwatch-fill"></i> Duration</p>
+                                                <p>7 - 10 days</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary mb-2"> Learn More</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- Top Destination  -->
+                    <div class="col text-center">
+                    <p class="display-5 txtCardBlack">Top Destinations</p>
+                        <div class="mt-5">
+                            <!-- 1st Level  -->
+                            <div class="row m-2">
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="japan"
+                                            src="images/japan.jpeg"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Japan</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.8</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>899</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="Argentina"
+                                            src="images/argentina.webp"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Argentina</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.9</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="Thailand"
+                                            src="images/thailand.jpeg"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Thailand</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.7</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>699</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <!-- 2nd Level  -->
+                            <div class="row m-2">
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="spain"
+                                            src="images/spain.jpeg"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Spain</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.3</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>299</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="iceland"
+                                            src="images/iceland.jpeg"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Iceland</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.6</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>650</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <!-- Photo  -->
+                                        <div>
+                                            <img 
+                                            rel="italy"
+                                            src="images/italy.jpg"
+                                            class="imgTopDestination">
+                                        </div>
+                                        <!-- Text  -->
+                                        <div class="mx-2">
+                                            <p>Italy</p>
+                                            <div class="d-flex justify-content-between">
+                                            <p><i class="bi bi-star-fill starColor"></i> 4.8</p>
+                                            <p> <span class="txtSecondary">From:</span><i class="bi bi-currency-dollar"></i>450</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
+
+
             <footer id="footer">
             <!-- place footer here -->
             </footer>

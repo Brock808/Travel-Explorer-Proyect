@@ -9,16 +9,21 @@
     --text-secondary: #6B7280;
     --text-white: #6B7280;
 
+    --txtCardWhite: #FFFFFF;
+    --txtCardBlack:#071426;
+
+    --star:#D4AF37;
     --border: #E5E7EB;
 }
 
 #header{
-    height: 10vh;
-    /* background-color: var(--navbar); */
+    height: 6vh;
+    background-color: var(--navbar);
 }
 
+
+
 #main{
-    background: gray;
     flex: 1;
 }
 
@@ -35,10 +40,12 @@ body{
 nav{
     background-color: var(--navbar);
     color: var(--card);
+    height: 6vh;
+    z-index: 1;
 }
 
 .btnNav{
-    color: white;
+    color: var(--card);
 }
 
 .txtWhite{
@@ -48,12 +55,99 @@ nav{
     color: var(--primary);
 }
 
-
 .card{
     background-color: var(--card);
     border: 1px solid var(--border);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
 }
 
 .btn-primary{
     background-color: var(--primary);
+}
+
+#collapseMenu{
+    background-color: var(--navbar)
+}
+
+#banner{
+    height: 30vh;
+    position: relative;
+}
+
+#banner img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.txtAndInput{
+    position: absolute;
+    top: 7%;
+    color: var(--background);
+}
+
+.imgCard{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 20vh;
+}
+
+.txtCard{
+    position: absolute;
+    color: var(--txtCardWhite);
+    text-shadow: 2px 2px 10px rgba(0,0,0,.5);
+}
+
+.txtCardBlack{
+    color: var(--txtCardBlack);
+    text-shadow: 2px 2px 10px rgba(0,0,0,.5);
+}
+
+.travelCard{
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0.2%;
+}
+
+.travelCard:hover{
+    transform: translateY(-8px);
+}
+
+.divFjordImg{
+    position: relative;
+}
+
+.imgFjord{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.txtFjord{
+    background-color: var(--background);
+    top: 10%;
+    left: 7%;
+}
+
+.txtSecondary{
+    color: var(--text-secondary)
+}
+
+.imgTopDestination{
+    position: relative;
+    width: 100%;
+    height: 14vh;
+}
+
+.starColor {
+    color: var(--star);
 }
