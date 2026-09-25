@@ -308,39 +308,127 @@
                 </div>
 
                 <!-- Travel Inspirations, travel planner and reviews  -->
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3mx-1 my-1">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-1 my-1">
                     <div class="col">
                         <!-- Travel Inspriration  -->
-                        <div class="card p-2">
+                        <div class="card p-2 w-100 h-100">
                             <p class="h4 txtCardBlack">Travel Inspiration</p>
-                            <div class="d-flex flex-column flex-md-row justify-content-between">
-                                <p><i class="bi bi-backpack2-fill txtBlue"></i> Beach</p>
-                                <div class="progress" style="height: 27px; width: 80%;">
-                                    <div class="progress-bar" style="width: 88%;">88%</div>
+                            <div class="my-auto">
+                                <div class="d-flex flex-column flex-md-row justify-content-between">
+                                    <p><i class="bi bi-backpack2-fill txtBlue"></i> Beach</p>
+                                    <div class="progress" style="height: 27px; width: 80%;">
+                                        <div class="progress-bar" style="width: 88%;">88%</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between">
-                                <p><i class="bi bi-tree-fill txtBlue"></i> Mountains</p>
-                                <div class="progress" style="height: 27px; width: 80%;">
-                                    <div class="progress-bar" style="width: 78%;">78%</div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between">
+                                    <p><i class="bi bi-tree-fill txtBlue"></i> Mountains</p>
+                                    <div class="progress" style="height: 27px; width: 80%;">
+                                        <div class="progress-bar" style="width: 78%;">78%</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex flex-column flex-md-row justify-content-between">
-                                <p><i class="bi bi-wifi-off txtBlue"></i> Adventures</p>
-                                <div class="progress" style="height: 27px; width: 80%;">
-                                    <div class="progress-bar" style="width: 66%;">66%</div>
+                                <div class="d-flex flex-column flex-md-row justify-content-between">
+                                    <p><i class="bi bi-wifi-off txtBlue"></i> Adventures</p>
+                                    <div class="progress" style="height: 27px; width: 80%;">
+                                        <div class="progress-bar" style="width: 66%;">66%</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <!-- Travel Planner  -->
-                        <div class="card">
-                            <p class="h4 txtCardBlack"></p>
+                        <div class="card p-2 w-100 h-100">
+                            <p class="h4 txtCardBlack">Travel Planner</p>
+                            <p class="m-2">Budget</p>
+                            <div class="d-flex justify-content-around">
+                                <div class="form-check">
+                                    <input class="form-check-input" id="low" type="checkbox">
+                                    <label class="form-check-label" for="low">Low ($)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="medium" type="checkbox">
+                                    <label class="form-check-label" for="medium">Medium ($$)</label>
+                                </div> 
+                                <div class="form-check">
+                                    <input class="form-check-input" id="low" type="checkbox">
+                                    <label class="form-check-label" for="low">High ($$$)</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-start m-2">
+                                <!-- Travel Style  -->
+                                <div class="m-1">
+                                    <p>Travel Style</p>
+                                    <select class="form-select">
+                                        <option>Adventure</option>
+                                        <option>Beach</option>
+                                        <option>Mountain</option>
+                                        <option>Everything</option>
+                                    </select>
+                                </div>
+                                <!-- Duration  -->
+                                <div class="m-1">
+                                    <p>Duration</p>
+                                    <select class="form-select">
+                                        <option>Any Duration</option>
+                                        <option>1 Week</option>
+                                        <option>2 Weeks</option>
+                                        <option>More than 2 Weeks</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary d-block w-50"><i class="bi bi-airplane-fill"></i> Generate Destination</button>
                         </div>
                     </div>
                     <div class="col">
-                        3
+                        <div class="card w-100 h-100 p-2">
+                            <p class="txtCardBlack h4">What Travelers Say</p>
+                            <div class="d-flex my-auto gap-3">
+                                <!-- 1Traveler  -->
+                                <div class="cardInner">
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <p>"The trip to Iceland was absolutely magical!!"</p>
+                                    <p>- Sarah Johnson</p>
+                                </div>
+                                <!-- 2Traveler  -->
+                                <div class="cardInner">
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <p>"Best esperience in Italy, cant't wait to go back!"</p>
+                                    <p>- Michael Brown</p>
+                                </div>
+                                <!-- 3Traveler  -->
+                                <div class="cardInner">
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <i class="bi bi-star-fill starColor"></i>
+                                    <p>"Thailand is a paradise! Everything was perfect."</p>
+                                    <p>- Emily Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subscribe banner  -->
+                <div class="backgroundBannerSubscribe d-flex h-50 justify-content-center">
+                    <div>
+                        <p class="display-6 fw-bold"><i class="bi bi-envelope"></i> Join 10,000+ Travelers</p>
+                    
+                        <p class="fs-5">Get travel tips, exclusive deals, and inspiration delivered to your inbox</p>
+                    </div>
+                    <div class="input-group h-25 w-25 my-auto ps-5">
+                        <input type="text" placeholder="Enter your email">
+                        <button class="btn btn-primary">Subscribe</button>
                     </div>
                 </div>
             </main>

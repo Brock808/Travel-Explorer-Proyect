@@ -14,6 +14,8 @@
 
     --star:#D4AF37;
     --border: #E5E7EB;
+
+    --backgroundBannerSubscribe: rgb(26, 100, 157);
 }
 
 #header{
@@ -150,4 +152,22 @@ nav{
 
 .starColor {
     color: var(--star);
+}
+
+.cardInner{
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.backgroundBannerSubscribe{
+    background: linear-gradient(
+    135deg,
+    var(--navbar),
+    var(--primary)
+    );
+    color: var(--txtCardWhite)
 }
