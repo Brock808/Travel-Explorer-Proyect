@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
     <head>
-        <title>Title</title>
+        <title>Travel Explorer</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +24,7 @@
     <body>
         <div class="d-flex flex-column min-vh-100 body">
             <header id="header">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg h-100">
                     <div class="d-flex w-100">
                         <div class="d-flex w-100 justify-content-between align-items-center"> 
                             <!-- Btn for collapse  -->
@@ -44,7 +44,7 @@
                     <!-- Collapse menu -->
                         <div id="collapseMenu" class="collapse navbar-collapse w-100 justify-content-end">
                             <div class="d-flex">
-                                <div clas="btn-group nav-item">
+                                <div class="btn-group nav-item">
                                     <button class="btn btnNav">Home</button>
                                     <button class="btn btnNav">Destinations</button>
                                     <button class="btn btnNav">Travel Planner</button>
@@ -62,7 +62,7 @@
             <main id="main">
                 <!-- Making Banner  -->
                 <div id="banner" class="bg-primary">
-                    <img src="images/banner3.jpeg" rel="banner">
+                    <img src="images/banner3.jpeg" alt="banner">
                     <div class="txtAndInput">
                         <p class="display-3 ps-4 fw-bold">Explore <br>The <span class="txtBlue">World!</span></p>
 
@@ -95,7 +95,7 @@
                             <div class="col">
                                 <div class="card d-flex p-3 justify-content-end">
                                     <img
-                                    rel="adventure"
+                                    alt="adventure"
                                     src="images/adventure.avif"
                                     class="d-none d-md-block imgCard">
                                     <span class="badge bg-primary mb-2 d-md-none">Adventure</span>
@@ -111,7 +111,7 @@
                             <div class="col">
                                 <div class="card d-flex p-3 justify-content-end">
                                     <img
-                                    rel="beach"
+                                    alt="beach"
                                     src="images/beach.avif"
                                     class="d-none d-md-block imgCard">
                                     <span class="badge bg-warning mb-2 d-md-none">Beach</span>
@@ -127,7 +127,7 @@
                             <div class="col">
                                 <div class="card d-flex p-3 justify-content-end">
                                     <img
-                                    rel="mountain"
+                                    alt="mountain"
                                     src="images/mountain.jpg"
                                     class="d-none d-md-block imgCard">
                                     <span class="badge bg-success mb-2 d-md-none">Mountains</span>
@@ -148,7 +148,7 @@
                                     <div class="d-flex divFjordImg">
                                         <div>
                                         <img
-                                        rel="norway"
+                                        alt="norway"
                                         src="images/norwayfjords.webp"
                                         class="imgCard py-3 imgFjord">
                                         <p class="badge txtCard txtFjord"><i class="bi bi-star-fill txtBlue"> 4.9 Excellent</i></p>
@@ -192,7 +192,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="japan"
+                                            alt="japan"
                                             src="images/japan.jpeg"
                                             class="imgTopDestination">
                                         </div>
@@ -211,7 +211,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="Argentina"
+                                            alt="Argentina"
                                             src="images/argentina.webp"
                                             class="imgTopDestination">
                                         </div>
@@ -230,7 +230,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="Thailand"
+                                            alt="Thailand"
                                             src="images/thailand.jpeg"
                                             class="imgTopDestination">
                                         </div>
@@ -250,7 +250,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="spain"
+                                            alt="spain"
                                             src="images/spain.jpeg"
                                             class="imgTopDestination">
                                         </div>
@@ -269,7 +269,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="iceland"
+                                            alt="iceland"
                                             src="images/iceland.jpeg"
                                             class="imgTopDestination">
                                         </div>
@@ -288,7 +288,7 @@
                                         <!-- Photo  -->
                                         <div>
                                             <img 
-                                            rel="italy"
+                                            alt="italy"
                                             src="images/italy.jpg"
                                             class="imgTopDestination">
                                         </div>
@@ -310,7 +310,7 @@
                 <!-- Travel Inspirations, travel planner and reviews  -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-1 my-1">
                     <div class="col">
-                        <!-- Travel Inspriration  -->
+                        <!-- Travel Inspiration  -->
                         <div class="card p-2 w-100 h-100">
                             <p class="h4 txtCardBlack">Travel Inspiration</p>
                             <div class="my-auto">
@@ -350,8 +350,8 @@
                                     <label class="form-check-label" for="medium">Medium ($$)</label>
                                 </div> 
                                 <div class="form-check">
-                                    <input class="form-check-input" id="low" type="checkbox">
-                                    <label class="form-check-label" for="low">High ($$$)</label>
+                                    <input class="form-check-input" id="high" type="checkbox">
+                                    <label class="form-check-label" for="high">High ($$$)</label>
                                 </div>
                             </div>
 
@@ -403,7 +403,7 @@
                                             <i class="bi bi-star-fill starColor"></i>
                                             <i class="bi bi-star-fill starColor"></i>
                                             <i class="bi bi-star-fill starColor"></i>
-                                            <p>"Best esperience in Italy, cant't wait to go back!"</p>
+                                            <p>"Best experience in Italy, can't wait to go back!"</p>
                                             <p>- Michael Brown</p>
                                         </div>
                                     </div>
@@ -436,7 +436,7 @@
                         </div>
                         <div class="col my-auto">
                             <div class="input-group">
-                                <input type="text" placeholder="Enter your email">
+                                <input type="email" placeholder="Enter your email">
                                 <button class="btn btn-primary">Subscribe</button>
                             </div>
                         </div>
@@ -485,7 +485,7 @@
                                 <a href="#" class="links">Travel Guide</a>
                                 <a href="#" class="links">Terms & Conditions</a>
                                 <a href="#" class="links">Privacy Policy</a>
-                                <a href="#" class="links">Thailand</a>
+                                <a href="#" class="links">Contact Support</a>
                             </div>
                         </div>
                         <div class="col txtWhite">
