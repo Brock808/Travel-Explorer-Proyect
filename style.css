@@ -24,14 +24,12 @@
     z-index: 1;
 }
 
-
-
 #main{
     flex: 1;
 }
 
 #footer{
-    background-color: #2563EB;
+    background-color: var(--navbar);
     min-height: 10vh;
 }
 
@@ -171,4 +169,8 @@ nav{
     var(--primary)
     );
     color: var(--txtCardWhite)
+}
+
+.links{
+    display: block;
 }
