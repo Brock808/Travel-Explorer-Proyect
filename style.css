@@ -22,10 +22,13 @@
     height: 8vh;
     background-color: var(--navbar);
     z-index: 1;
+    position: fixed;
+    width: 100%;
 }
 
 #main{
     flex: 1;
+    padding-top: 77.0391px;
 }
 
 #footer{
